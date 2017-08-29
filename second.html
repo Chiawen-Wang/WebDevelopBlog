@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="./typo.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <style>
+    img{
+      display:block;
+      margin:auto;
+      max-width: 100%;
+    }
+  </style>
+  <title>第二篇博客</title>
+</head>
+<body>
+  <div id="content">
+# 我的第二篇博客
+***Jiawen_Wang***   
+第一个markdowm,其实我会啦，哈哈哈哈哈
+<img src="https://timgsa.baidu.com/timg?    image&quality=80&size=b9999_10000&sec=1503985977863&di=1ced1905ba59571c3a24ddb07316c2a9&imgtype=0&src=http%3A%2F%2Fimage.coolapk.com%2Fdiscovery%2F2016%2F1216%2F314635_1481899276_4241.png" alt="CutePUPPY">
+  </div>
+  <div id='show'></div>
+  <script>
+    let content = document.getElementById('content');
+    let markdown = content.innerHTML;
+     
+    let html = marked(markdown);
+    console.log(html);
+    content.innerHTML = html;
+    
+  </script>
+</body>
+</html>
